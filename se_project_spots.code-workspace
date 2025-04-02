@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../OneDrive/Documents/se_project_coffeeshop/pages"
+    },
+    {
+      "path": "../../Downloads/se_project_spots-main need help/se_project_spots-main/images"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "se_project_spots"
+  }
+}
