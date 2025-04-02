@@ -1,13 +1,16 @@
 {
   "folders": [
     {
+      "name": "se_project_spots",
       "path": "."
     },
     {
-      "path": "../../OneDrive/Documents/se_project_coffeeshop/pages"
+      "name": "images",
+      "path": "../../Downloads/se_project_spots-main need help/se_project_spots-main/images"
     },
     {
-      "path": "../../Downloads/se_project_spots-main need help/se_project_spots-main/images"
+      "name": "pages",
+      "path": "../../OneDrive/Documents/se_project_coffeeshop/pages"
     }
   ],
   "settings": {
