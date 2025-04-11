@@ -22,4 +22,4 @@ Good luck and have fun!
 
 # The projects name is sprint 3 spots project. its a responsive webpage that allows users to edit profiles and to create new posts by utilizing advanced HTML and CSS structures. we have implimented grid layouts that respond to various screen sizes.
 
-## Deployment- this website is deployed to github pages.
+## Deployment- this website is deployed to github pages. https://bisget.github.io/se_project_spots/
