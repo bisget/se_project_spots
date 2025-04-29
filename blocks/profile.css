@@ -40,10 +40,24 @@
 
 .profile__edit-btn {
   margin-top: auto;
+  width: 84px;
+  height: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .profile__add-btn {
   margin-left: auto;
+  width: 73px;
+  height: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 @media screen and (max-width: 627px) {
@@ -60,6 +74,7 @@
     height: 80px;
     width: 80px;
     margin-bottom: 12px;
+    border-radius: 8px;
   }
 
   .profile__name {
