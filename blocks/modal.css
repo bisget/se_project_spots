@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .modal_is-opened {
@@ -54,4 +55,8 @@
 
 .modal__input::placeholder {
   color: #2121214d;
+}
+
+.modal__submit-btn {
+  max-width: 156px;
 }
