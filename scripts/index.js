@@ -38,7 +38,18 @@ function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal__is-opened");
+  editProfileModal.classList.remove("modal_is-opened");
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+  const newPostImageInput = newPostModal.querySelector("#card-image-input");
+  const newCaptionInput = newPostModal.querySelector("#card-caption-input");
+
+  console.log("Image URL:", newPostImageInput.value);
+  console.log("Profile Caption:", newCaptionInput.value);
+
+  newPostModal.classList.remove("modal_is-opened");
+}

@@ -38,6 +38,8 @@
   cursor: pointer;
   opacity: 0.8;
   background-color: transparent;
+  border: none;
+  background-image: ("../images/Group 27.svg");
 }
 
 .modal__close-btn:hover {
