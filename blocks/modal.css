@@ -26,6 +26,7 @@
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
+  gap: 32px;
 }
 
 .modal__close-btn {
@@ -58,6 +59,7 @@
 .modal__form {
   display: flex;
   flex-direction: column;
+  gap: 32px;
 }
 
 .modal__label {
@@ -69,13 +71,17 @@
   font-size: 16px;
   line-height: 100%;
   color: #212121;
+  gap: 8px;
 }
 
 .modal__input {
   display: block;
   margin: 8px 0 0;
-  width: 100%;
+  width: 630px;
+  height: 52px;
   cursor: pointer;
+  border-radius: 10px;
+  gap: 8px;
 }
 
 .modal__input-hover {
