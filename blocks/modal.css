@@ -27,6 +27,7 @@
   padding: 32px 50px;
   position: relative;
   gap: 32px;
+  margin: auto;
 }
 
 .modal__close-btn {
@@ -40,7 +41,7 @@
   opacity: 0.8;
   background-color: transparent;
   border: none;
-  background-image: ("../images/Group 27.svg");
+  background-image: (url(../images/close.svg));
 }
 
 .modal__close-btn:hover {
@@ -63,29 +64,30 @@
 }
 
 .modal__label {
-  margin: 0 0 32px;
-  height: 18px;
-  width: 49px;
+  margin: 0;
+  max-width: 49px;
   font-family: poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  color: #212121;
+  color: #212121, 0.8;
   gap: 8px;
 }
 
 .modal__input {
   display: block;
   margin: 8px 0 0;
-  width: 630px;
-  height: 52px;
+  width: 100%;
+  line-height: 52px;
   cursor: pointer;
-  border-radius: 10px;
-  gap: 8px;
+  border-radius: 8px;
+  border: 1px;
+  padding: 16px 12px 16px 12px;
+  border-color: 33, 33, 33, 0.4;
 }
 
-.modal__input-hover {
-  opacity: 0.8;
+.modal__input:hover {
+  border-color: 33, 33, 33;
 }
 
 .modal__input::placeholder {
@@ -108,4 +110,11 @@
 
 .modal__submit-btn:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__container {
+    max-width: 300px;
+    line-height: 336px;
+  }
 }

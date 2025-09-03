@@ -45,12 +45,11 @@ function handleEditProfileSubmit(evt) {
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
-console.log("Image URL:", newPostImageInput.value);
-console.log("Profile Caption:", newCaptionInput.value);
-
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
   newPostModal.classList.remove("modal_is-opened");
+  console.log("Image URL:", newPostImageInput.value);
+  console.log("Profile Caption:", newCaptionInput.value);
 }
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
