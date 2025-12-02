@@ -60,7 +60,7 @@ const cardTemplate = document.querySelector("#card-template").content.querySelec
 const cardsList = document.querySelector(".cards__list");
 
 function getCardElement(data) {
-  const cardElement = cardTemplate.cloneNode(true);
+  let cardElement = cardTemplate.cloneNode(true);
   const cardTitleEl = cardElement.querySelector(".card__title");
   const cardImageEl = cardElement.querySelector(".card__image");
 
@@ -86,10 +86,6 @@ function getCardElement(data) {
     openModal(previewModal);
   });
 
-  previewModalCloseBtn.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-
   return cardElement;
 }
 
@@ -111,6 +107,10 @@ editProfileCloseBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
+previewModalCloseBtn.addEventListener("click", () => {
+    closeModal(previewModal);
+  });
+
 newPostBtn.addEventListener("click", function () {
   openModal(newPostModal);
 });
@@ -130,7 +130,6 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  newPostModal.classList.remove("modal_is-opened");
 
   const inputValues = {
     name: newCaptionInput.value,
@@ -139,6 +138,8 @@ function handleAddCardSubmit(evt) {
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
+  addCardFormElement.reset();
+  closeModal(newPostModal);
 }
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);

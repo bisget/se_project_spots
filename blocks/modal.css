@@ -51,6 +51,7 @@
 .modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
+  background-image: url(../images/close_icon.svg.svg);
 }
 
 .modal__close-btn:hover {
@@ -135,6 +136,12 @@
 
 .modal__caption {
 color: white;
+font-size: 20px;
+font-family: poppins, Arial, sans-serif;
+font-weight: 500;
+line-height: 120%;
+width: 198px;
+height: 24px;
 }
 
 
