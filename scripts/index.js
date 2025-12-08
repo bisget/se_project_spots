@@ -56,6 +56,7 @@ const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 const newPostImageInput = newPostModal.querySelector("#card-image-input");
 const newCaptionInput = newPostModal.querySelector("#profile-caption-input");
+const overlay = document.querySelector('.overlay');
 
 const cardTemplate = document.querySelector("#card-template").content.querySelector(".card");
 const cardsList = document.querySelector(".cards__list");
@@ -96,12 +97,13 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  overlay.classList.remove("modal_is-opened");
 }
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  resetValidation(editProfileForm, {editProfileNameInput, editProfileDescriptionInput}, settings );
+  resetValidation(editProfileForm, [editProfileNameInput, editProfileDescriptionInput], settings );
   openModal(editProfileModal);
 });
 
@@ -150,4 +152,12 @@ addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
+});
+
+overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeModal(modal_is-opened);
+  }
 });

@@ -2,6 +2,7 @@
   visibility: hidden;
   background-color: #00000080;
   position: fixed;
+  z-index: 8;
   top: 0;
   right: 0;
   bottom: 0;
@@ -53,6 +54,7 @@
   top: 0;
   right: -52.5px;
   background-image: url(../images/close_icon.svg.svg);
+  background-repeat: no-repeat;
 }
 
 .modal__close-btn:hover {
@@ -71,7 +73,6 @@
 .modal__form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 
 .modal__label {
@@ -130,6 +131,11 @@
   background-color: #212121;
 }
 
+.modal__submit-btn_disabled {
+  background-color: #212121;
+  cursor: default;
+}
+
 .modal__submit-btn:hover {
   opacity: 0.8;
 }
@@ -154,7 +160,9 @@ font-family: poppins, Arial, sans-serif;
 font-weight: 500;
 line-height: 120%;
 width: 198px;
-height: 24px;
+background-color: #212121;
+padding: 4px 8px;
+border-radius: 8px;
 }
 
 
