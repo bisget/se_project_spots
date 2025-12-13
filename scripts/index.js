@@ -154,10 +154,15 @@ initialCards.forEach(function (item) {
   cardsList.append(cardElement);
 });
 
-overlay.addEventListener('click', closeModal);
+document.querySelectorAll('.modal').forEach(modal => {
+  modal.addEventListener('mousedown', (evt) => {
+    if (evt.target === modal) closeModal(modal);
+  });
+});
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
-    closeModal(modal_is-opened);
+    const opened = document.querySelector('.modal_is-opened');
+    if (opened) closeModal(opened);
   }
 });
