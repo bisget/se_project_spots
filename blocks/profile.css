@@ -129,4 +129,8 @@
     margin: 0;
     width: 100%;
   }
+
+  .profile__edit-btn {
+    align-self: center;
+  }
 }

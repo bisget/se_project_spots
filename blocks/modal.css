@@ -29,6 +29,7 @@
   max-width: 730px;
   width: 100%;
   border-radius: 8px;
+  box-sizing: border-box;
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
@@ -83,7 +84,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  color: rgba(33, 33, 33 0.8);
+  border: 1px solid rgba(33, 33, 33 0.8);
 }
 
 .modal__input {
@@ -168,7 +169,11 @@ border-radius: 8px;
 
 @media screen and (max-width: 627px) {
   .modal__container {
-    padding: 12px 8px;
+    padding: 22px 12px 12px;
+  }
+
+  .modal__caption {
+    font-size: 16px;
   }
 
   .modal__title {
@@ -176,7 +181,7 @@ border-radius: 8px;
   }
 
   .modal__close-btn {
-    top: 22px;
+    top: 12px;
     right: 12px;
   }
 
@@ -191,9 +196,7 @@ border-radius: 8px;
   .modal__submit-btn {
     max-width: none;
   }
-}
 
-@media screen and (max-width: 627px) {
   .modal__close-btn_type_preview {
   top: -48px;
   right: 0;

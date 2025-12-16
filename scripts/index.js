@@ -56,7 +56,6 @@ const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 const newPostImageInput = newPostModal.querySelector("#card-image-input");
 const newCaptionInput = newPostModal.querySelector("#profile-caption-input");
-const overlay = document.querySelector('.overlay');
 
 const cardTemplate = document.querySelector("#card-template").content.querySelector(".card");
 const cardsList = document.querySelector(".cards__list");
@@ -97,7 +96,6 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
-  overlay.classList.remove("modal_is-opened");
 }
 
 editProfileBtn.addEventListener("click", function () {
