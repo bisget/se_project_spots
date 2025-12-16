@@ -7,3 +7,5 @@
 ## Deployment- this website is deployed to github pages. https://bisget.github.io/se_project_spots/
 
 ## Video description- https://1drv.ms/v/c/517cbeac5c82fe31/EcYQOno-K1RMpirGVYHmeAIBtkDUOyUE5u-jzYvjRbuxbQ
+
+## Video description 2- https://screenrec.com/share/p8D6lHNsIT
